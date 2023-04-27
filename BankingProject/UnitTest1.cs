@@ -22,18 +22,25 @@ namespace BankingProject
             //getting pagesource
             var data=driver.PageSource;
             Console.WriteLine(data);
-            Console.WriteLine("----------------------------------------");
+            Console.WriteLine("======================================================");
             //getting the title of the web page
             var title= driver.Title;
             Console.WriteLine("Title of the page is:  "+title);
-            Console.WriteLine("----------------------------------------");
+            Console.WriteLine("======================================================");
 
             //address of the wiindow
             var windowID = driver.CurrentWindowHandle;
             Console.WriteLine("Window Id is :"+windowID);
-            Console.WriteLine("----------------------------------------");
 
-            //var element = driver.FindElement(By.Name(""));
+            Console.WriteLine("======================================================");
+            driver.Navigate().GoToUrl("http://www.amazon.in/");
+            var windows=driver.WindowHandles;
+            Console.WriteLine(windows.Count);
+            Console.WriteLine(windows);
+            driver.SwitchTo().Window(windowID);
+            driver.Navigate().Back();
+            driver.Close();
+
         }
 
     }

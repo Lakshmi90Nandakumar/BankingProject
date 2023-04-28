@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace BankingProject
@@ -29,6 +30,7 @@ namespace BankingProject
             //click on apple tab
             var apple = driver.FindElement(By.XPath("//span[@class='css-zneog5 e1wnkr790' and text()='Continue with Apple']"));
             apple.Click();
+            Thread.Sleep(1000);
             //click on facebook tab
             var faceBook = driver.FindElement(By.XPath("//span[@class='css-zneog5 e1wnkr790' and text()='Continue with Facebook']"));
             faceBook.Click();

@@ -36,7 +36,7 @@ namespace BankingProject
             foreach(var wh in allWh) 
             {
                 String title=driver.Title;
-                if(title.Contains("Google"))
+                if(title.Contains("Sign in – Google accounts"))
                 {
                     driver.SwitchTo().Window(wh);//switch to google window
                 }

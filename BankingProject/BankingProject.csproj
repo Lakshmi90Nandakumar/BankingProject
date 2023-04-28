@@ -59,6 +59,7 @@
     <Compile Include="Practise\FaceBookPrac.cs" />
     <Compile Include="Practise\PractiseEx.cs" />
     <Compile Include="Practise\Unit test.cs" />
+    <Compile Include="Practise\AuthendicationPrac.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
